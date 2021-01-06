@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:layout_margin="2dp"
+    tools:context=".EmployesData">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bricks Data Record"
+        android:textSize="34sp"
+        android:textStyle="bold"
+
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Bricks Quantity"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/edquantity"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Bricks Price"
+        android:textStyle="bold"
+
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:id="@+id/edqprice"
+        />
+
+    <TextView
+        android:id="@+id/edqresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="29sp"
+        android:gravity="right"
+        android:hint="0"
+         android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert"
+            android:textColor="#fff"
+            android:id="@+id/insertdata"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btnback"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:id="@+id/updatedata"
+            android:textStyle="bold"
+            android:background="@drawable/btnback"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter ID To Update"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:id="@+id/edid"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:id="@+id/deletedata"
+            android:textStyle="bold"
+            android:background="@drawable/btnback"
+            />
+
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Data"
+        android:textColor="#fff"
+        android:id="@+id/viewalldata"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btnback"
+        />
+
+</LinearLayout>
